@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Standings">
+   <children>
+      <Hyperlink fx:id="logoutLink" layoutX="554.0" layoutY="26.0" onAction="#setLogoutLink" text="Logout" />
+      <Hyperlink fx:id="accountLink" layoutX="448.0" layoutY="27.0" onAction="#setAccountLink" text="Guest" />
+      <Line endX="-100.0" endY="312.0" layoutX="259.0" layoutY="168.0" startX="-99.20709228515625" startY="-108.5" />
+      <Line endX="640.0" endY="59.5" startX="160.29290771484375" startY="59.5" />
+      <Hyperlink fx:id="finderLink" layoutX="26.0" layoutY="82.0" onAction="#setFinderLink" prefHeight="24.0" prefWidth="113.0" text="Regional Finder" />
+      <Hyperlink fx:id="upcomingLink" layoutX="10.0" layoutY="113.0" onAction="#setUpcomingLink" text="Upcoming Regionals" />
+      <Hyperlink fx:id="baylorLink" layoutX="159.0" layoutY="15.0" onAction="#setBaylorLink" text="ICPC Baylor">
+         <font>
+            <Font name="Ubuntu Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="worldfinalLink" layoutX="38.0" layoutY="200.0" onAction="#setWorldfinalLink" text="World Finals" />
+      <Label layoutX="183.0" layoutY="84.0" text="Standings of">
+         <font>
+            <Font name="Ubuntu Condensed" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="contestNameLabel" layoutX="275.0" layoutY="84.0" text="Label">
+         <font>
+            <Font name="Ubuntu" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tab" layoutX="183.0" layoutY="124.0" prefHeight="335.0" prefWidth="439.0">
+         <columns>
+            <TableColumn fx:id="colPlace" prefWidth="50.0" text="#" />
+            <TableColumn fx:id="colTeam" prefWidth="235.0" text="Team Name" />
+            <TableColumn fx:id="colScore" prefWidth="74.0" text="Score" />
+            <TableColumn fx:id="colPenalty" prefWidth="75.0" text="Penalty" />
+         </columns>
+      </TableView>
+      <Hyperlink fx:id="backLink" layoutX="580.0" layoutY="82.0" onAction="#setBackLink" text="Back" />
+   </children>
+</AnchorPane>

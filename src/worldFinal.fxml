@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WorldFinals">
+   <children>
+      <Hyperlink fx:id="logoutLink" layoutX="554.0" layoutY="26.0" onAction="#setLogoutLink" text="Logout" />
+      <Hyperlink fx:id="accountLink" layoutX="448.0" layoutY="27.0" onAction="#setAccountLink" text="Guest" />
+      <Line endX="-100.0" endY="312.0" layoutX="259.0" layoutY="168.0" startX="-99.20709228515625" startY="-108.5" />
+      <Line endX="640.0" endY="59.5" startX="160.29290771484375" startY="59.5" />
+      <Hyperlink fx:id="finderLink" layoutX="26.0" layoutY="82.0" onAction="#setFinderLink" prefHeight="24.0" prefWidth="113.0" text="Regional Finder" />
+      <Hyperlink fx:id="upcomingLink" layoutX="10.0" layoutY="113.0" onAction="#setUpcomingLink" text="Upcoming Regionals" />
+      <Hyperlink fx:id="baylorLink" layoutX="159.0" layoutY="15.0" onAction="#setBaylorLink" text="ICPC Baylor">
+         <font>
+            <Font name="Ubuntu Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="worldfinalLink" layoutX="38.0" layoutY="200.0" onAction="#setWorldfinalLink" text="World Finals" />
+      <Text layoutY="-13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="202.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="World Final Contests">
+         <font>
+            <Font name="Ubuntu Bold" size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listView" layoutX="202.0" layoutY="127.0" prefHeight="313.0" prefWidth="383.0" />
+   </children>
+</AnchorPane>

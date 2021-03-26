@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Contests">
+   <children>
+      <Hyperlink fx:id="logoutLink" layoutX="554.0" layoutY="26.0" onAction="#setLogoutLink" text="Logout" />
+      <Hyperlink fx:id="accountLink" layoutX="448.0" layoutY="27.0" onAction="#setAccountLink" text="Guest" />
+      <Line endX="-100.0" endY="312.0" layoutX="259.0" layoutY="168.0" startX="-99.20709228515625" startY="-108.5" />
+      <Line endX="640.0" endY="59.5" startX="160.29290771484375" startY="59.5" />
+      <Hyperlink fx:id="finderLink" layoutX="26.0" layoutY="82.0" onAction="#setFinderLink" prefHeight="24.0" prefWidth="113.0" text="Regional Finder" />
+      <Hyperlink fx:id="upcomingLink" layoutX="10.0" layoutY="113.0" onAction="#setUpcomingLink" text="Upcoming Regionals" />
+      <Hyperlink fx:id="baylorLink" layoutX="159.0" layoutY="15.0" onAction="#setBaylorLink" text="ICPC Baylor">
+         <font>
+            <Font name="Ubuntu Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="worldfinalLink" layoutX="38.0" layoutY="200.0" onAction="#setWorldfinalLink" text="World Finals" />
+      <Label fx:id="contestNameLabel" layoutX="320.0" layoutY="115.0" text="Contest Name">
+         <font>
+            <Font name="Ubuntu Bold" size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="registerTeamLink" layoutX="312.0" layoutY="176.0" text="Register Your Team" />
+      <Hyperlink fx:id="problemsetLink" layoutX="278.0" layoutY="240.0" text="Problemset" />
+      <Hyperlink fx:id="standingsLink" layoutX="406.0" layoutY="240.0" text="Standings" />
+      <Label fx:id="contestDateLabel" layoutX="337.0" layoutY="147.0" text="2019-02-11" />
+   </children>
+</AnchorPane>
